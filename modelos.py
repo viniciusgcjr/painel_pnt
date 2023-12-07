@@ -53,11 +53,11 @@ else:
 # Construct the image URL
 if 'ETA' in selected_variable:
     image_urls = {
-        hour: f"https://barramento2.apac.pe.gov.br/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}{time_period}_{hour:02}.png" for hour in range(hour_limit)
+        hour: f"https://barramento2.apac.pe.gov.br:443/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}{time_period}_{hour:02}.png" for hour in range(hour_limit)
     }
 elif 'Horas - WRF' in selected_variable:
     image_urls = {
-        hour: f"https://barramento2.apac.pe.gov.br/imagens_modelo/{data[selected_variable]}{hour:02}_{current_datetime.strftime('%Y%m%d')}_{time_period}_1.png" for hour in range(hour_limit)
+        hour: f"https://barramento2.apac.pe.gov.br:443/imagens_modelo/{data[selected_variable]}{hour:02}_{current_datetime.strftime('%Y%m%d')}_{time_period}_1.png" for hour in range(hour_limit)
    }
 elif 'Horas - ETA' in selected_variable:
     image_urls = {
