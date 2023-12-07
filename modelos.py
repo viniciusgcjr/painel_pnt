@@ -53,27 +53,27 @@ else:
 # Construct the image URL
 if 'ETA' in selected_variable:
     image_urls = {
-        hour: f"http://200.238.105.69/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}{time_period}_{hour:02}.png" for hour in range(hour_limit)
+        hour: f"https://barramento2.apac.pe.gov.br/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}{time_period}_{hour:02}.png" for hour in range(hour_limit)
     }
 elif 'Horas - WRF' in selected_variable:
     image_urls = {
-        hour: f"http://200.238.105.69/imagens_modelo/{data[selected_variable]}{hour:02}_{current_datetime.strftime('%Y%m%d')}_{time_period}_1.png" for hour in range(hour_limit)
+        hour: f"https://barramento2.apac.pe.gov.br/imagens_modelo/{data[selected_variable]}{hour:02}_{current_datetime.strftime('%Y%m%d')}_{time_period}_1.png" for hour in range(hour_limit)
    }
 elif 'Horas - ETA' in selected_variable:
     image_urls = {
-        hour: f"http://200.238.105.69/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}{time_period}_{hour:02}.png" for hour in range(hour_limit)
+        hour: f"https://barramento2.apac.pe.gov.br/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}{time_period}_{hour:02}.png" for hour in range(hour_limit)
    }
 elif 'GEPS' in selected_variable:
     image_urls = {
-        hour: f"http://200.238.105.69/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}_{time_period}_6em6_{hour}.png" for hour in range(hour_limit)
+        hour: f"https://barramento2.apac.pe.gov.br/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}_{time_period}_6em6_{hour}.png" for hour in range(hour_limit)
     }
 elif 'GEM' in selected_variable:
     image_urls = {
-        hour: f"http://200.238.105.69/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}_{time_period}_6em6_{hour}.png" for hour in range(hour_limit)
+        hour: f"https://barramento2.apac.pe.gov.br/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}_{time_period}_6em6_{hour}.png" for hour in range(hour_limit)
     }
 elif 'ICON' in selected_variable:
     image_urls = {
-        hour: f"http://200.238.105.69/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}_{time_period}_6em6_{hour}.png" for hour in range(hour_limit)
+        hour: f"https://barramento2.apac.pe.gov.br/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}_{time_period}_6em6_{hour}.png" for hour in range(hour_limit)
     }
 elif 'GFSA' in selected_variable:
     image_urls = {
@@ -81,7 +81,7 @@ elif 'GFSA' in selected_variable:
     }  
 else:
     image_urls = {
-        hour: f"http://200.238.105.69/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}_{time_period}_{hour}.png" for hour in range(hour_limit)
+        hour: f"https://barramento2.apac.pe.gov.br/imagens_modelo/{data[selected_variable]}_{current_datetime.strftime('%Y%m%d')}_{time_period}_{hour}.png" for hour in range(hour_limit)
     }
 
 # Main window for plotting
